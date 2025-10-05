@@ -81,7 +81,7 @@ cd apps/formal-e2e-tests
 pnpm test
 
 # 6. 并发运行（4个进程）
-pnpm test:parallel
+pnpm test:e2e:parallel
 
 # 7. 运行单个 feature 文件
 npx cucumber-js src/features/sample-api.feature
