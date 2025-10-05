@@ -1,0 +1,17 @@
+{
+    "name": "common-test-cucumber-playwright",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/common-test-cucumber-playwright/src",
+    "projectType": "library",
+    "targets": {
+      "build": {
+        "executor": "@nx/js:tsc",
+        "outputs": ["{options.outputPath}"],
+        "options": {
+          "outputPath": "dist/libs/common-test-cucumber-playwright",
+          "tsConfig": "libs/common-test-cucumber-playwright/tsconfig.json",
+          "main": "libs/common-test-cucumber-playwright/src/index.ts"
+        }
+      }
+    }
+  }

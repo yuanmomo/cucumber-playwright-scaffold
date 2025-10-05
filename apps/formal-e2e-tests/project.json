@@ -1,0 +1,23 @@
+{
+    "name": "formal-e2e-tests",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "apps/formal-e2e-tests/src",
+    "projectType": "application",
+    "targets": {
+      "test": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "pnpm test",
+          "cwd": "apps/formal-e2e-tests"
+        }
+      },
+      "test:parallel": {
+        "executor": "nx:run-commands",
+        "options": {
+          "command": "pnpm test:parallel",
+          "cwd": "apps/formal-e2e-tests"
+        }
+      }
+    },
+    "implicitDependencies": ["common-test-cucumber-playwright"]
+  }
